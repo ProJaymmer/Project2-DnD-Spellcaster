@@ -14,7 +14,7 @@ const SpellList = (props) => {
 			.then((data) => {
 				console.log(data);
 				setSpellList(data.results);
-				setSelectedSpell(data.results[0].name);
+				setSelectedSpell(data.results[0].url);
 			});
 	};
 
@@ -24,7 +24,7 @@ const SpellList = (props) => {
 	}, []);
 
 	const handleSpellClick = (spell) => {
-		console.log(spell.url);
+		console.log(spell);
 		setSelectedSpell(spell);
 	};
 
@@ -47,7 +47,7 @@ const SpellList = (props) => {
 			<h1>Spell List</h1>
 			<div className='SpellListHtml'>{spellListHtml}</div>
 			<div className='SingleSpellHtml'>
-				<SingleSpell spellInfo={selectedSpell} />
+				<SingleSpell selectedSpell={selectedSpell} />
 			</div>
 		</div>
 	);

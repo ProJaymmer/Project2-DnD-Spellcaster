@@ -4,8 +4,8 @@ const SingleSpell = (props) => {
 	const [spell, setSpell] = useState();
 	console.log(props);
 
-	const makeApiCall = (spellsUrl) => {
-		fetch(spellsUrl)
+	const makeApiCall = () => {
+		fetch(`https://www.dnd5eapi.co${props.selectedSpell}`)
 			.then((response) => {
 				return response.json();
 			})
@@ -15,9 +15,8 @@ const SingleSpell = (props) => {
 	};
 
 	useEffect(() => {
-		const spellsUrl = `https://www.dnd5eapi.co/api/spells`;
-		makeApiCall(spellsUrl);
-	}, []);
+		makeApiCall();
+	}, [props.name]);
 
 	return (
 		<div className='SingleSpell'>
