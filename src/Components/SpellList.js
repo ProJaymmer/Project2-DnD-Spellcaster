@@ -25,7 +25,7 @@ const SpellList = (props) => {
 
 	const handleSpellClick = (spell) => {
 		console.log(spell);
-		setSelectedSpell(spell);
+		setSelectedSpell(spell.url);
 	};
 
 	const spellListHtml = spellList.map((spell) => {
