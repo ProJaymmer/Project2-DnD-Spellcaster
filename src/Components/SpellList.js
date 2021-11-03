@@ -43,13 +43,15 @@ const SpellList = (props) => {
 	});
 
 	return (
-		<div className='SpellList'>
-			<h1>Spell List</h1>
-			<div className='SpellListHtml'>{spellListHtml}</div>
+		<>
+			<div className='SpellList'>
+				<h1>Spell List</h1>
+				<div className='SpellListHtml'>{spellListHtml}</div>
+			</div>
 			<div className='SingleSpellHtml'>
 				<SingleSpell selectedSpell={selectedSpell} />
 			</div>
-		</div>
+		</>
 	);
 };
 export default SpellList;

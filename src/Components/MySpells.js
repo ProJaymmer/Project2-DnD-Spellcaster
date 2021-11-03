@@ -1,3 +1,5 @@
-const MySpells = () => {};
+const MySpells = () => {
+    
+};
 
 export default MySpells;

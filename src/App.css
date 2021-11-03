@@ -1,11 +1,21 @@
 .App {
 	text-align: center;
 	height: 812px;
+	display: grid;
+	grid-template-rows: 0.5fr 4fr 3fr;
 }
 nav {
+	grid-row: 1;
 	display: flex;
 	justify-content: space-around;
 	margin-top: 15px;
+}
+.SpellList {
+	grid-row: 2;
+}
+.SpellList h1 {
+	margin: 0px;
+	padding: 0px;
 }
 .SpellListHtml {
 	display: grid;
@@ -14,10 +24,27 @@ nav {
 	text-align: left;
 	height: 400px;
 	overflow: scroll;
+	border-style: groove;
+	border-color: black;
+}
+.SingleSpell {
+	grid-row: 3;
+}
+.SingleSpell h1 {
+	padding: 0px;
+	margin: 0px;
 }
 .SpellDescription {
+	height: 290px;
 	text-align: left;
-	margin: auto;
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 auto;
+	padding: 0px 10px;
+	overflow: scroll;
+	border-style: groove;
+	border-color: black;
 }
 .SpellName {
 	font-size: 20px;
