@@ -26,7 +26,11 @@ const SingleSpell = (props) => {
 				<p>
 					<span className='SpellName'>{spell.name}: </span>
 					{spell.desc}
+					<br />
 				</p>
+				<button onClick={() => props.addSpellToList(spell)}>
+					Add to Your Spells
+				</button>
 			</div>
 		);
 	}

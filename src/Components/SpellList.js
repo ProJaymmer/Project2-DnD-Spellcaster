@@ -49,7 +49,10 @@ const SpellList = (props) => {
 				<div className='SpellListHtml'>{spellListHtml}</div>
 			</div>
 			<div className='SingleSpellHtml'>
-				<SingleSpell selectedSpell={selectedSpell} />
+				<SingleSpell
+					selectedSpell={selectedSpell}
+					addSpellToList={props.addSpellToList}
+				/>
 			</div>
 		</>
 	);

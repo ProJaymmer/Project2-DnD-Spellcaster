@@ -27,7 +27,11 @@ function App() {
 				exact
 				render={() => <SpellList addSpellToList={addSpellToList} />}
 			/>
-			<Route path='/my-spells' render={() => <MySpells />} />
+			<Route
+				path='/my-spells'
+				exact
+				render={() => <MySpells mySpells={mySpells} />}
+			/>
 		</div>
 	);
 }
