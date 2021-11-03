@@ -13,11 +13,21 @@ const MySpells = (props) => {
 			);
 		});
 	}
+	let mySpellsDescriptionHtml = '';
+	if (props.mySpells[0]) {
+		mySpellsDescriptionHtml = props.mySpells.desc;
+	}
 	return (
-		<div className='MySpells'>
-			<h1>My Spells</h1>
-			<section>{mySpellsHtml}</section>
-		</div>
+		<>
+			<div className='MySpells'>
+				<h1>My Spells</h1>
+				<section>{mySpellsHtml}</section>
+			</div>
+			<div className='MySpellsDescription'>
+				<h1>Spell Description</h1>
+				{mySpellsDescriptionHtml}
+			</div>
+		</>
 	);
 };
 
