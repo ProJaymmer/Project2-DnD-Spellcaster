@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Project2-DnD-Spellcaster/static/css/main.b5da894f.chunk.css",
-    "main.js": "/Project2-DnD-Spellcaster/static/js/main.7c7a3c05.chunk.js",
-    "main.js.map": "/Project2-DnD-Spellcaster/static/js/main.7c7a3c05.chunk.js.map",
+    "main.css": "/Project2-DnD-Spellcaster/static/css/main.d933eb58.chunk.css",
+    "main.js": "/Project2-DnD-Spellcaster/static/js/main.78fc086c.chunk.js",
+    "main.js.map": "/Project2-DnD-Spellcaster/static/js/main.78fc086c.chunk.js.map",
     "runtime-main.js": "/Project2-DnD-Spellcaster/static/js/runtime-main.300ac7db.js",
     "runtime-main.js.map": "/Project2-DnD-Spellcaster/static/js/runtime-main.300ac7db.js.map",
     "static/js/2.7540a07c.chunk.js": "/Project2-DnD-Spellcaster/static/js/2.7540a07c.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.cf8b290c.chunk.js": "/Project2-DnD-Spellcaster/static/js/3.cf8b290c.chunk.js",
     "static/js/3.cf8b290c.chunk.js.map": "/Project2-DnD-Spellcaster/static/js/3.cf8b290c.chunk.js.map",
     "index.html": "/Project2-DnD-Spellcaster/index.html",
-    "static/css/main.b5da894f.chunk.css.map": "/Project2-DnD-Spellcaster/static/css/main.b5da894f.chunk.css.map",
+    "static/css/main.d933eb58.chunk.css.map": "/Project2-DnD-Spellcaster/static/css/main.d933eb58.chunk.css.map",
     "static/js/2.7540a07c.chunk.js.LICENSE.txt": "/Project2-DnD-Spellcaster/static/js/2.7540a07c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.300ac7db.js",
     "static/js/2.7540a07c.chunk.js",
-    "static/css/main.b5da894f.chunk.css",
-    "static/js/main.7c7a3c05.chunk.js"
+    "static/css/main.d933eb58.chunk.css",
+    "static/js/main.78fc086c.chunk.js"
   ]
 }
