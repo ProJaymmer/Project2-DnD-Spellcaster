@@ -3,15 +3,16 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	background-color: black;
+	background-color: #040404;
 	color: white;
 	text-align: center;
 	height: 812px;
 	display: grid;
 	grid-template-rows: 0.5fr 4fr 3fr;
+	font-family: 'MedievalSharp', cursive;
 }
 nav {
-	background-color: rgba(255, 0, 0, 0.6);
+	background-color: #040404;
 	grid-row: 1;
 	display: flex;
 	justify-content: space-around;
@@ -20,18 +21,15 @@ nav {
 	margin-top: 0px;
 	font-size: 25px;
 	border-style: groove;
-	border-color: black;
+	border-color: red;
 }
 a {
 	color: white;
 	text-decoration: none;
 }
 li:hover {
-	color: black;
-	text-shadow: 1px 1px red;
-}
-li:visited {
-	color: black;
+	color: red;
+	text-shadow: 2px 2px black;
 }
 .DnDLogo {
 	padding: 0px;
@@ -39,7 +37,7 @@ li:visited {
 }
 .SpellList {
 	grid-row: 2;
-	background-color: rgba(255, 0, 0, 0.6);
+	background-color: rgba(37, 40, 42, 0.5);
 	color: white;
 }
 .SpellList h1 {
@@ -47,7 +45,7 @@ li:visited {
 	padding: 0px;
 	border-left: groove;
 	border-right: groove;
-	border-color: black;
+	border-color: red;
 }
 .SpellListHtml {
 	display: grid;
@@ -55,14 +53,14 @@ li:visited {
 	list-style-type: georgian;
 	text-align: left;
 	height: 400px;
-	overflow: scroll;
+	overflow: auto;
 	border-style: groove;
-	border-color: black;
+	border-color: red;
 	font-weight: bolder;
 }
 .SingleSpell {
 	grid-row: 3;
-	background-color: rgba(255, 0, 0, 0.6);
+	background-color: rgba(37, 40, 42, 0.5);
 	color: white;
 }
 .SingleSpell h1 {
@@ -70,7 +68,7 @@ li:visited {
 	margin: 0px;
 	border-left: groove;
 	border-right: groove;
-	border-color: black;
+	border-color: red;
 }
 .SpellDescription {
 	height: 267px;
@@ -78,9 +76,9 @@ li:visited {
 	vertical-align: middle;
 	margin: 0 auto;
 	padding: 0px 10px;
-	overflow: scroll;
+	overflow: auto;
 	border-style: groove;
-	border-color: black;
+	border-color: red;
 	font-size: 15px;
 	font-weight: bolder;
 }
@@ -94,47 +92,55 @@ li:visited {
 }
 button {
 	margin: 0px auto 15px auto;
-	background-color: black;
+	background-color: rgba(37, 40, 42, 0.5);
 	color: white;
 	padding: 5px;
 	font-size: 20px;
+	font-family: 'MedievalSharp', cursive;
+	border-radius: 5px;
+}
+button:hover {
+	border-radius: 50px;
+	-o-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 .MySpellsTop {
-	background-color: rgba(211, 211, 211, 0.5);
-	color: black;
+	background-color: rgba(37, 40, 42, 0.5);
+	color: white;
 	border-left: groove;
 	border-right: groove;
-	border-color: black;
+	border-color: red;
 }
 .MySpellsTop h1 {
 	margin: 0px;
 	padding: 0px;
 	border-bottom: groove;
-	border-color: black;
+	border-color: red;
 }
 .MySpellsTop section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	height: 400px;
-	overflow: scroll;
+	overflow: auto;
 	text-align: left;
 	font-weight: bolder;
 }
 .MySpellsBottom {
-	background-color: rgba(211, 211, 211, 0.5);
+	background-color: rgba(37, 40, 42, 0.5);
 	border-style: groove;
-	border-color: black;
-	color: black;
+	border-color: red;
+	color: white;
 }
 .MySpellsBottom h1 {
 	padding: 0;
 	margin: 0;
 	border-bottom: groove;
-	border-color: black;
+	border-color: red;
 }
 .MySpellsDescription {
 	height: 267px;
-	overflow: scroll;
+	overflow: auto;
 	text-align: left;
 	padding: 0px 5px 0px 5px;
 	line-height: 2;
