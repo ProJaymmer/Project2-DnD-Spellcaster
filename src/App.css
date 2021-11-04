@@ -45,6 +45,9 @@ li:visited {
 .SpellList h1 {
 	margin: 0px;
 	padding: 0px;
+	border-left: groove;
+	border-right: groove;
+	border-color: black;
 }
 .SpellListHtml {
 	display: grid;
@@ -65,6 +68,9 @@ li:visited {
 .SingleSpell h1 {
 	padding: 0px;
 	margin: 0px;
+	border-left: groove;
+	border-right: groove;
+	border-color: black;
 }
 .SpellDescription {
 	height: 267px;
@@ -93,13 +99,44 @@ button {
 	padding: 5px;
 	font-size: 20px;
 }
-.MySpells h1 {
+.MySpellsTop {
+	background-color: rgba(211, 211, 211, 0.5);
+	color: black;
+	border-left: groove;
+	border-right: groove;
+	border-color: black;
+}
+.MySpellsTop h1 {
 	margin: 0px;
 	padding: 0px;
+	border-bottom: groove;
+	border-color: black;
 }
-.MySpells section {
+.MySpellsTop section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	height: 400px;
+	overflow: scroll;
 	text-align: left;
+	font-weight: bolder;
+}
+.MySpellsBottom {
 	background-color: rgba(211, 211, 211, 0.5);
+	border-style: groove;
+	border-color: black;
+	color: black;
+}
+.MySpellsBottom h1 {
+	padding: 0;
+	margin: 0;
+	border-bottom: groove;
+	border-color: black;
+}
+.MySpellsDescription {
+	height: 267px;
+	overflow: scroll;
+	text-align: left;
+	padding: 0px 5px 0px 5px;
+	line-height: 2;
+	font-weight: bolder;
 }

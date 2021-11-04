@@ -1,5 +1,14 @@
+import { useState } from 'react';
+import SpellDescription from './SpellDescription';
+
 const MySpells = (props) => {
 	console.log(props);
+	const [selectedSpell, setSelectedSpell] = useState([]);
+
+	const handleSpellClick = (spell) => {
+		console.log(spell);
+		setSelectedSpell(spell);
+	};
 
 	let mySpellsHtml = '';
 	if (props.mySpells[0]) {
@@ -7,26 +16,25 @@ const MySpells = (props) => {
 			return (
 				<div>
 					<ul>
-						<li>{spell.name}</li>
+						<li
+							onClick={() => {
+								handleSpellClick(spell);
+							}}>
+							{spell.name}
+						</li>
 					</ul>
 				</div>
 			);
 		});
 	}
-	let mySpellsDescriptionHtml = '';
-	if (props.mySpells[0]) {
-		mySpellsDescriptionHtml = props.mySpells.desc;
-	}
+
 	return (
 		<>
-			<div className='MySpells'>
+			<div className='MySpellsTop'>
 				<h1>My Spells</h1>
 				<section>{mySpellsHtml}</section>
 			</div>
-			<div className='MySpellsDescription'>
-				<h1>Spell Description</h1>
-				{mySpellsDescriptionHtml}
-			</div>
+			<SpellDescription selectedSpell={selectedSpell} />
 		</>
 	);
 };
