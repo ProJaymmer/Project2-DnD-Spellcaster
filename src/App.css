@@ -27,6 +27,15 @@ a {
 	color: white;
 	text-decoration: none;
 }
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
 li:hover {
 	color: red;
 	text-shadow: 2px 2px black;
